@@ -1,0 +1,118 @@
+.projects-page {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto 2rem;
+}
+
+.project-header h2 {
+  font-size: 2.8rem;
+  font-weight: 100;
+  color: #aaa;
+}
+.project-header span {
+  font-weight: 600;
+  color: #222;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f8f8f8;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 6px;
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 600px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex: 1 1 50%;
+}
+
+.project-details {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.project-details h3 {
+  font-weight: 100;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-details p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.project-details button {
+  width: fit-content;
+  background: white;
+  color: #333333;
+  border: 1px solid black;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.project-details button:hover {
+  background: black;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.pagination .controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.pagination button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #333;
+}
+
+.pagination button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-details {
+    padding: 0;
+    text-align: center;
+  }
+
+  .project-details button {
+    align-self: center;
+  }
+}
