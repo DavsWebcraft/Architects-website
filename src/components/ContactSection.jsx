@@ -1,4 +1,6 @@
-// components/ContactSection.jsx
+import React from "react";
+import "../styles/landing.css";
+
 const ContactSection = () => {
   return (
     <section className="contact-section">
@@ -6,11 +8,11 @@ const ContactSection = () => {
       <div className="contact-content">
         <form className="contact-form">
           <input type="text" placeholder="Name" />
-          <input type="tel" placeholder="Phone Number" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Interested In" />
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send Email →</button>
+          <input type="tel" placeholder="Phone Number*" required />
+          <input type="email" placeholder="E-mail*" required />
+          <input type="text" placeholder="Interested in" />
+          <textarea placeholder="Message*" required></textarea>
+          <button type="submit">SEND EMAIL →</button>
         </form>
         <div className="contact-image">
           <img src="/Contact1.png" alt="Contact" />

@@ -16,6 +16,9 @@
   color: #333333;
 }
 
+.photo {
+  font-weight: 100;
+}
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));

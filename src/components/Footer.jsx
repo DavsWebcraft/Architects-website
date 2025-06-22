@@ -1,18 +1,24 @@
-function Footer() {
+import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaPinterest,
+} from "react-icons/fa";
+import "../index.css";
+
+const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="footer-content">
         {/* Logo */}
-        <div className="footer-section logo-block">
-          <img
-            src="/footerLogo.png"
-            alt="Digital Project Logo"
-            className="footer-logo"
-          />
+        <div className="footer-logo">
+          <img src="/footerLogo.png" alt="Digital Project Logo" />
+          <p>DIGITAL PROJECT</p>
         </div>
 
-        {/* Navigation Links */}
-        <div className="footer-section">
+        {/* Info Links */}
+        <div className="footer-info">
           <h4>Information</h4>
           <ul>
             <li>Main</li>
@@ -23,41 +29,36 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Contact Info */}
-        <div className="footer-section">
+        {/* Contact Details */}
+        <div className="footer-contacts">
           <h4>Contacts</h4>
           <p>
             📍 1234 Sample Street
             <br />
-            Austin Texas 78704
+            Austin Texas 78681
           </p>
           <p>📞 512.333.2222</p>
-          <p>📧 sampleemail@gmail.com</p>
+          <p>✉️ sampleemail@gmail.com</p>
         </div>
 
-        {/* Social Media */}
-        <div className="footer-section">
+        {/* Social Links */}
+        <div className="footer-social">
           <h4>Social Media</h4>
           <div className="social-icons">
-            <a href="#">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-pinterest-p"></i>
-            </a>
+            <FaFacebookF />
+            <FaTwitter />
+            <FaLinkedinIn />
+            <FaPinterest />
           </div>
         </div>
       </div>
 
-      <div className="footer-bottom">&copy; 2021 All Rights Reserved</div>
+      {/* Bottom note */}
+      <div className="footer-bottom">
+        <p>© 2021 All Rights Reserved</p>
+      </div>
     </footer>
   );
-}
+};
 
 export default Footer;

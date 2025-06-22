@@ -156,73 +156,78 @@ nav a:hover {
   cursor: pointer;
 }
 
+/* FOOTER STYLES */
 .footer {
   background-color: #1a1a1a;
-  color: white;
-  padding: 20px;
-  font-family: sans-serif;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  font-size: 1rem;
 }
 
-.footer-container {
+.footer-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 2rem;
   max-width: 1200px;
-  margin: auto;
-  gap: 30px;
-}
-
-.footer-section {
-  flex: 1 1 200px;
-  min-width: 200px;
-  margin-top: 2rem;
+  margin: 0 auto;
 }
 
 .footer-logo {
-  height: 40px;
-  margin-bottom: 10px;
+  flex: 1 1 100%;
+  text-align: center;
+}
+.footer-logo img {
+  max-width: 4rem;
+  margin-bottom: 0.5rem;
+}
+.footer-logo p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 
-.footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 1rem;
-  font-weight: 600;
+.footer-info,
+.footer-contacts,
+.footer-social {
+  flex: 1 1 20%;
+  min-width: 200px;
 }
 
-.footer-section ul {
+.footer-info h4,
+.footer-contacts h4,
+.footer-social h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-info ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+.footer-info li {
+  margin-bottom: 0.5rem;
 }
 
-.footer-section li {
-  margin-bottom: 20px;
+.footer-contacts p,
+.footer-social p {
+  margin-bottom: 0.5rem;
 }
 
-.footer-section p {
-  font-size: 0.9rem;
-  margin: 20px 0;
-}
-
-.social-icons a {
-  color: white;
-  margin-right: 15px;
-  margin-top: 2rem;
+.social-icons {
+  display: flex;
+  gap: 1rem;
   font-size: 1.2rem;
 }
 
+/* Bottom */
 .footer-bottom {
   text-align: center;
-  padding: 20px 0 0;
-  font-size: 0.85rem;
-  border-top: 1px solid #444;
-  margin-top: 30px;
-}
-
-.footer-logo {
-  height: 80px;
-  margin-bottom: 10px;
-  object-fit: contain;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
 @media (max-width: 768px) {
@@ -246,8 +251,15 @@ nav a:hover {
     display: block;
   }
 
-  .footer-section {
-    flex: none;
-    min-width: 100px;
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info,
+  .footer-contacts,
+  .footer-social {
+    flex: 1 1 100%;
   }
 }

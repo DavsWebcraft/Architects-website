@@ -1,21 +1,20 @@
-// components/Landing.jsx
-import HeroSection from "./HeroSection";
-import AboutSection from "./AboutSection";
-import MissionSection from "./MissionSection";
-import "../styles/Landing.css";
-import ProjectsSection from "./ProjectsSection";
-import ContactSection from "./ContactSection";
+import React from "react";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import MissionSection from "../components/MissionSection";
+import OurprojectSection from "../components/OurprojectSection";
+import ContactSection from "../components/ContactSection";
 
-const LandingPage = () => {
+const Landing = () => {
   return (
-    <main className="landing-page">
+    <main>
       <HeroSection />
       <AboutSection />
       <MissionSection />
-      <ProjectsSection />
+      <OurprojectSection />
       <ContactSection />
     </main>
   );
 };
 
-export default LandingPage;
+export default Landing;

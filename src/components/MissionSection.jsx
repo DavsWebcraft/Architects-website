@@ -1,4 +1,7 @@
-// src/components/MissionSection.jsx
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/landing.css";
+
 const MissionSection = () => {
   return (
     <section className="mission-section">
@@ -8,8 +11,7 @@ const MissionSection = () => {
           <h2>1</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            efficitur, lectus et facilisis placerat. Dueoxener lagitor
-            etunamuste sai mator.
+            efficitur, lectus et facilisis placerat.
           </p>
         </div>
         <div className="mission-box">
