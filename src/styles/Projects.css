@@ -101,7 +101,6 @@
   color: #fff;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .project-item {
     flex-direction: column;

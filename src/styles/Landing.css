@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .hero-text,
 .about-text {
   flex: 1 1 45%;
